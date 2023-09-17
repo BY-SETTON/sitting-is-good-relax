@@ -191,11 +191,13 @@ body {
 
 .total {
     font-size: 22px;
+    border-radius: 0 0 24px 24px;
 }
 
 .start-menu,
 .game-over {
     font-size: 62px;
+    border-radius: 24px;
 }
 
 .total,
@@ -204,6 +206,6 @@ body {
     color: red;
     font-weight: bold;
     background-color: pink;
-    border-radius: 24px;
+    /*border-radius: 24px;*/
     padding: 24px;
 }
