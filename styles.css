@@ -10,6 +10,7 @@ body {
 .mute {
     margin: 25px 25px 0;
     font-size: 32px;
+    position: fixed;
 }
 
 .mute:hover {
@@ -150,12 +151,14 @@ body {
 }
 
 .start-game-container {
-    display: flex
+    display: flex;
+    /*display: none;*/
 }
 
 
 .game-over-container {
     display: none;
+    /*display: flex;*/
 }
 
 .game-over-container, .start-game-container {
@@ -186,10 +189,19 @@ body {
 
 }
 
+.total {
+    font-size: 22px;
+}
+
+.start-menu,
+.game-over {
+    font-size: 62px;
+}
+
+.total,
 .start-menu,
 .game-over {
     color: red;
-    font-size: 62px;
     font-weight: bold;
     background-color: pink;
     border-radius: 24px;

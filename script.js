@@ -11,7 +11,7 @@ const startGame = document.getElementById("start-game-container");
 const startButton = document.getElementById("start-button");
 const retryButton = document.getElementById("retry-button");
 const muteButton = document.getElementById("mute-button");
-const backgroundMusic = document.getElementById("backgroundMusic");
+const totalScore = document.getElementById("total");
 
 // game controls
 let gameStarted = false;
@@ -309,7 +309,9 @@ timerInterval = setInterval(() => {
   timer--;
   if (timer <= 0) {
     canPlayerMove = false
+    totalScore.textContent = `FINAL SCORE: ${score}`;
     gameOver.style.display = 'flex';
+
     pausedTimer = true;
     tempScore = 0;
   }
