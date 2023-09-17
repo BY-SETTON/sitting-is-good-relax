@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Top-Down Game</title>
+</head>
+<body>
+<div class="mute" id="mute-button">🔊</div>
+<div class="game">
+  <div class="info-board">
+    <div id="tempScore" class="tempScore">Collected points: 0</div>
+    <div id="score" class="score">TOTAL: 0</div>
+  </div>
+  <div class="room">
+    <div class="runner-block" id="sprite">
+      <img src="runner.png" alt="Runner" class="sprite">
+    </div>
+    <img class="trigger-block" id="trigger-block" src="empty_couch.png"/>
+    <img src="apple.png" class="apple" id="apple"/>
+    <img src="coffee.png" class="coffee" id="coffee"/>
+    <img src="remote.png" class="remote" id="remote"/>
+  </div>
+  <div class="timer-container">
+    <div id="timer" class="timer">TIME: 10s</div>
+  </div>
+  <div class="game-over-container" id="game-over-container">
+    <div class="game-over" id="game-over">GAME OVER (too slow)</div>
+    <button class="retry-button" id="retry-button">RE-SIT</button>
+  </div>
+  <div class="start-game-container" id="start-game-container">
+    <div class="start-menu" id="start-menu">SITTING IS GOOD TO RELAX</div>
+    <button class="start-button" id="start-button">START TO SIT</button>
+  </div>
+  <script src="script.js"></script>
+  <audio loop autoplay id="backgroundMusic">
+    <source src="sitting-song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+</body>
+</html>

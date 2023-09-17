@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.mute {
+    margin: 25px 25px 0;
+    font-size: 32px;
+}
+
+.mute:hover {
+    cursor: pointer;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* align item horizontally */
+    align-items: center;
+    height: 100vh;
+
+}
+
+.info-board {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.room {
+    background-image: url("floor.jpg");
+    width: 800px; /* Adjust room dimensions as needed */
+    height: 600px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.trigger-block {
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+
+.timer, .score {
+    font-weight: bold;
+    color: lightpink;
+}
+
+.score {
+    font-size: 32px;
+}
+
+.timer {
+    font-size: 62px;
+}
+
+.sprite {
+    /*background-color: red;*/
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 80px; /* Adjust sprite frame width as needed */
+    height: 80px; /* Adjust sprite frame height as needed */
+}
+
+.runner-block {
+    background-color: green;
+    z-index: 100;
+    position: absolute;
+    width: 10px; /* Adjust sprite frame width as needed */
+    height: 10px; /* Adjust sprite frame height as needed */
+}
+
+.apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.coffee {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.remote {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.flip-right {
+    transform: scaleX(1);
+}
+
+.flip-left {
+    transform: scaleX(-1);
+}
+
+.rotate-up {
+    transform: scale(-1, -1);
+
+
+    /*transform: rotate(-90deg);*/
+}
+
+.up-right {
+    transform: scale(1, -1);
+}
+
+.up-left {
+    transform: scale(-1, -1);
+}
+
+.down-left {
+    transform: scale(-1, 1);
+}
+
+.down-right {
+    transform: scale(1, 1);
+}
+
+.down {
+    transform: scaleX(-1);
+}
+
+.up {
+    transform: scaleY(-1);
+}
+
+.left {
+    transform: scaleX(-1);
+}
+
+.right {
+    transform: scaleX(1);
+}
+
+
+.tempScore {
+    color: pink;
+    font-size: 22px;
+}
+
+.start-game-container {
+    display: flex
+}
+
+
+.game-over-container {
+    display: none;
+}
+
+.game-over-container, .start-game-container {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 300;
+}
+
+.start-button,
+.retry-button {
+    margin: 20px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: deeppink;
+    color: pink;
+    font-weight: bold;
+    border-width: 0;
+    box-shadow: 5px 5px 5px 2px purple;
+    width: 230px;
+    max-width: 230px;
+}
+
+.start-button:hover,
+.retry-button:hover {
+    background-color: purple;
+    cursor: pointer;
+
+}
+
+.start-menu,
+.game-over {
+    color: red;
+    font-size: 62px;
+    font-weight: bold;
+    background-color: pink;
+    border-radius: 24px;
+    padding: 24px;
+}
